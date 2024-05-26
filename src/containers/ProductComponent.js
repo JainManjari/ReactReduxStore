@@ -10,7 +10,7 @@ const ProductComponent = () => {
         <div className="card">
           <div className="image"></div>
           <div className="content">
-            <div className="header">{products[0].name}</div>
+            <div className="header">{products[0].title}</div>
           </div>
         </div>
       </div>
