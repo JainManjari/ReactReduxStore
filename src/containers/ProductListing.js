@@ -12,13 +12,11 @@ const ProductListing = () => {
     try {
       let response = await axios.get("https://fakestoreapi.com/products");
       dispatch(setProducts(response.data));
-      console.log("dispatched ", response.data);
     } catch (err) {
       console.log("error in fetching products", err);
     }
   };
   useEffect(() => {
-    console.log("useffect");
     fetchProducts();
   }, []);
   return (
