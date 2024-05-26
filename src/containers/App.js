@@ -9,3 +9,11 @@ function App() {
 }
 
 export default App;
+
+
+/**
+ * 
+ * npm install --save react-router-dom
+ * npm install --save redux react-redux
+ * npm install axios
+ */
