@@ -15,5 +15,6 @@ export default App;
  * 
  * npm install --save react-router-dom
  * npm install --save redux react-redux
+ * npm install @reduxjs/toolkit
  * npm install axios
  */
