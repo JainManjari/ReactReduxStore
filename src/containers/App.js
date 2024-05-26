@@ -1,12 +1,22 @@
 import "./App.css";
 import Header from "./Header";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import ProductListing from "./ProductListing";
+import ProductDetails from "./ProductDetails";
+import NotFound from "./NotFound";
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
+          <Route path="/" element={<ProductListing />} />
+          <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
