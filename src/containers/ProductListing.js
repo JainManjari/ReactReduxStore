@@ -1,7 +1,13 @@
 import React from "react";
+import ProductCard from "./ProductComponent";
 
 const ProductListing = () => {
-  return <h1>Product Listing</h1>;
+  return (
+    <div className="ui grid container" style={{marginTop:50}}>
+      <h1>Product Listing</h1>
+      <ProductCard />
+    </div>
+  );
 };
 
 export default ProductListing;
