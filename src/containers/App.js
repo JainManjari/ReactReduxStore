@@ -1,18 +1,21 @@
-import './App.css';
+import "./App.css";
+import Header from "./Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      Hello world
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
 
-
 /**
- * 
+ *
  * npm install --save react-router-dom
  * npm install --save redux react-redux
  * npm install @reduxjs/toolkit
