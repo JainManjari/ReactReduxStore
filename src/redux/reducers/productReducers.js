@@ -10,7 +10,6 @@ export const productReducers = (state = initialState, { type, payload }) => {
     case ActionTypes.SET_PRODUCTS:
       return { ...state, products: payload };
     case ActionTypes.SELECTED_PRODUCTS:
-        console.log("reducers ", payload);
         return {...state, selectProduct:payload}
     default:
       return initialState;
