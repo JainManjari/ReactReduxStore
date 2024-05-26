@@ -10,8 +10,7 @@ const ProductDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { reducers } = useSelector((state) => state);
-  const { allProducts } = reducers;
-  const { selectProduct } = allProducts;
+  const { selectProduct } = reducers;
 
   const fetchProductById = async function () {
     try {
