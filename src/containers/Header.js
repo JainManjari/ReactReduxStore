@@ -20,11 +20,25 @@ class Header extends React.Component {
    *   badh m agar html ya koi aur event se changes aaenge toh mount nhi chalega...
    *   woh sirf ek baar chlta h.. starting m.. bss...
    * 
+   *   It is good for API calls
+   * 
+   * 
+   */
+
+  /**
+   * 
+   * 
+   *  if you call setState inside render, then it will be stuck in an infinite loop
    * 
    */
 
 
+
+
+
+
   componentDidMount() {
+    this.setState({name:"Jain2"});  // here constructor -> render -> mount -> mount has change the state so render will be called again
     console.log("mount ");
   }
   render() {
