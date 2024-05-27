@@ -51,7 +51,15 @@ class Header extends React.Component {
       console.log("data is same");
       return;
     }
-    
+
+  }
+
+  shouldComponentUpdate(){
+    // it can stop rendering
+    console.log("shouldUpdate ", this.state); // here, it is updating the state but since rendering is stop
+    // the latest values are not shown
+    // we can resume rendering by returning true
+    return true;
   }
   render() {
     // this.setState({name:"MJ"});  // here it will be stucked in an infinite loop
